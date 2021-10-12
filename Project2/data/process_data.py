@@ -44,6 +44,9 @@ def clean_data(df):
         categories[column] = categories[column].astype(str).str[-1]    
         categories[column] = categories[column].astype(int)
     
+    #replace 2 to 1 to make a binary column
+    categories["related"] = categories.related.replace({2:1})
+    
     # replace the old categories column
     df.drop('categories', axis = 1, inplace = True)
     df = pd.concat([df, categories], axis=1)
@@ -65,7 +68,7 @@ def save_data(df, database_filename):
     """
     # save data into a sqlite database
     engine = create_engine('sqlite:///' + database_filename)
-    df.to_sql('DisasterResponse', engine, index=False)
+    df.to_sql('DisasterResponse', engine, index=False, if_exists='replace')
 
 
 
