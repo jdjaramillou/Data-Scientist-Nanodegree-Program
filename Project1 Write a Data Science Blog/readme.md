@@ -24,7 +24,7 @@ To be able to run this notebook, you need to install these libraries:
 
 ***
 ### Introduction
-<img src=https://raw.githubusercontent.com/jdjaramillou/Data-Scientist-Nanodegree-Program/main/Project1%20Write%20a%20Data%20Science%20Blog/images/andre-francois-mckenzie-iGYiBhdNTpE-unsplash.jpg? width="480">
+<img src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80" width="480">
 
 in this project I explore the historical prices of bitcoin fromo January 2017 to Octuber 2021. The historical data was downloaded from investing.com [website](https://www.investing.com/indices/investing.com-btc-usd). This data contains among other information regarding daily closing prices, volume traded and daily price change.
 <br>
